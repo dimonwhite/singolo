@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/lato-v16-latin-300.eot');
+    src: local('Lato Light'), local('Lato-Light'),
+            url('assets/fonts/lato-v16-latin-300.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/lato-v16-latin-300.woff2') format('woff2'),
+            url('assets/fonts/lato-v16-latin-300.woff') format('woff'),
+            url('assets/fonts/lato-v16-latin-300.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/lato-v16-latin-regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+            url('assets/fonts/lato-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/lato-v16-latin-regular.woff2') format('woff2'),
+            url('assets/fonts/lato-v16-latin-regular.woff') format('woff'),
+            url('assets/fonts/lato-v16-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/lato-v16-latin-700.eot');
+    src: local('Lato Bold'), local('Lato-Bold'),
+            url('assets/fonts/lato-v16-latin-700.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/lato-v16-latin-700.woff2') format('woff2'),
+            url('assets/fonts/lato-v16-latin-700.woff') format('woff'),
+            url('assets/fonts/lato-v16-latin-700.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+    src: url('assets/fonts/lato-v16-latin-900.eot');
+    src: local('Lato Black'), local('Lato-Black'),
+            url('assets/fonts/lato-v16-latin-900.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/lato-v16-latin-900.woff2') format('woff2'),
+            url('assets/fonts/lato-v16-latin-900.woff') format('woff'),
+            url('assets/fonts/lato-v16-latin-900.ttf') format('truetype');
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.jsb,.inline-flex.jsb {
+    justify-content: space-between;
+}
+
+.flex.jfs,.inline-flex.jfs {
+    justify-content: flex-start;
+}
+
+.flex.jfe,.inline-flex.jfe {
+    justify-content: flex-end;
+}
+
+.flex.jc,.inline-flex.jc {
+    justify-content: center;
+}
+
+.flex.ac,.inline-flex.ac {
+    align-items: center;
+}
+
+.flex.afs,.inline-flex.afs {
+    align-items: flex-start;
+}
+
+.flex.afe,.inline-flex.afe {
+    align-items: flex-end;
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+    color: #767e9e;
+}
+
+.container {
+    padding: 0 calc(50% - 510px);
+}
+
+.contacts {
+    padding: 62px 40px 59px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.contacts_title {
+    margin-bottom: 21px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.2px;
+    color: #f0d8d9;
+}
+
+.contacts_desc {
+    margin-bottom: 44px;
+    font-weight: 300;
+    text-align: justify;
+    color: #f0d8d9;
+}
+
+.form {
+    width: 619px;
+}
+
+.input_block {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.input_block:last-child {
+    margin-bottom: 0;
+}
+
+.form_item {
+    width: 100%;
+    padding-left: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #f0d8d9;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+}
+
+.input {
+    height: 38px;
+}
+
+.textarea {
+    height: 202px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.form_item::placeholder {
+    color: #f48c8f;
+}
+
+.contacts_text {
+    width: calc(100% - 639px);
+    color: #f0d8d9;
+}
+
+.contacts_text_title {
+    margin-bottom: 10px;
+    padding-left: 1px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.1px;
+}
+
+.contacts_text_desc {
+    margin-bottom: 20px;
+    width: calc(100% + 1px);
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+.contacts_info {
+    font-size: 12px;
+}
+
+.contacts_info_item {
+    margin-bottom: 2px;
+}
+
+.contacts_info_item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts_info_item .img {
+    width: 13px;
+    height: 11px;
+    margin-left: 1px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.contacts_info_item .text {
+    color: #f0d8d9;
+    text-decoration: none;
+}
+
+.contacts_info_item.address .text {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+.contacts_info_item.phone .img {
+    margin-bottom: 1px;
+}
+
+.contacts_info_item.email .img {
+    margin-top: 2px;
+}
+
+.footer {
+    height: 76px;
+    padding: 0 40px 0 42px;
+    background-color: #2d303a;
+}
+
+.footer_text {
+    font-size: 12px;
+    letter-spacing: -0.2px;
+}
+
+.footer .about_item_social {
+    left: 0;
+}
+
+.about_item_social {
+    position: relative;
+    left: 1px;
+}
+
+.about_item_social_item {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.about_item_social_item:last-child {
+    margin-right: 0;
+}
+
+.about_item_social_item:hover {
+    opacity: 0.5;
+}
