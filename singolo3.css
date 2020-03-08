@@ -105,7 +105,7 @@ body {
 }
 
 .contacts {
-    padding: 62px 40px 59px;
+    padding: 62px 40px 67px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -155,9 +155,14 @@ body {
 }
 
 .textarea {
+    display: block;
     height: 202px;
     padding-top: 10px;
     resize: none;
+}
+
+.submit {
+    display: none;
 }
 
 .form_item::placeholder {
