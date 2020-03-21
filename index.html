@@ -16,34 +16,61 @@
             <nav class="navigation">
                 <ul class="navigation_block flex ac">
                     <li class="navigation_item active">
-                        <a href="#" class="navigation_link">HOME</a>
+                        <a href="#home" class="navigation_link">HOME</a>
                     </li>
                     <li class="navigation_item">
-                        <a href="#" class="navigation_link">SERVICES</a>
+                        <a href="#services" class="navigation_link">SERVICES</a>
                     </li>
                     <li class="navigation_item">
-                        <a href="#" class="navigation_link">PORTFOLIO</a>
+                        <a href="#portfolio" class="navigation_link">PORTFOLIO</a>
                     </li>
                     <li class="navigation_item">
-                        <a href="#" class="navigation_link">ABOUT</a>
+                        <a href="#about" class="navigation_link">ABOUT</a>
                     </li>
                     <li class="navigation_item">
-                        <a href="#" class="navigation_link">CONTACT</a>
+                        <a href="#contact" class="navigation_link">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <section class="carousel">
-            <div class="carousel_item">
-                <img src="assets/img/phone_left.png" alt="Телефон" class="phone phone_left">
-                <img src="assets/img/phone_right.png" alt="Телефон" class="phone phone_right">
+        <section class="carousel section" id="home">
+            <div class="carousel_wrapper">
+                <div class="carousel_item active">
+                    <div class="phone phone_left">
+                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                    </div>
+                    <div class="phone phone_right">
+                        <img src="assets/img/phone-horizontal-shadow.png" alt="Телефон" class="shadow">
+                        <img src="assets/img/phone-horizontal.png" alt="Телефон" class="case">
+                        <img src="assets/img/phone-horizontal-display.png" alt="Телефон" class="display">
+                    </div>
+                </div>
+                <div class="carousel_item blue">
+                    <div class="phone phone_left phone_center_min phone_center_left">
+                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                    </div>
+                    <div class="phone phone_left phone_center">
+                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                        <img src="assets/img/phone-green-display.png" alt="Телефон" class="display">
+                    </div>
+                    <div class="phone phone_left phone_center_min phone_center_right">
+                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                    </div>
+                </div>
             </div>
             <div class="carousel_nav">
                 <button class="carousel_nav_btn carousel_nav_left"></button>
                 <button class="carousel_nav_btn carousel_nav_right"></button>
             </div>
         </section>
-        <section class="content">
+        <section class="content section" id="services">
             <h1 class="title">Our Services</h1>
             <div class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
             <div class="vantages flex jsb">
@@ -91,34 +118,34 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio section" id="portfolio">
             <div class="portfolio_title">Portfolio</div>
             <div class="portfolio_desc">
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
             </div>
             <ul class="portfolio_nav flex">
-                <li class="portfolio_nav_item flex ac jc active"><a href="#" class="link">All</a></li>
-                <li class="portfolio_nav_item flex ac jc"><a href="#" class="link">Web Design</a></li>
-                <li class="portfolio_nav_item flex ac jc"><a href="#" class="link">Graphic Design</a></li>
-                <li class="portfolio_nav_item flex ac jc"><a href="#" class="link">Artwork</a></li>
+                <li class="portfolio_nav_item flex ac jc active"><a href="#" data-link="All" class="link">All</a></li>
+                <li class="portfolio_nav_item flex ac jc"><a href="#" data-link="Web Design" class="link">Web Design</a></li>
+                <li class="portfolio_nav_item flex ac jc"><a href="#" data-link="Graphic Design" class="link">Graphic Design</a></li>
+                <li class="portfolio_nav_item flex ac jc"><a href="#" data-link="Artwork" class="link">Artwork</a></li>
             </ul>
-            <div class="portfolio_block flex">
-                <img class="portfolio_item" src="assets/img/portfolio1.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio2.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio3.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio4.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio5.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio6.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio7.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio8.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio9.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio10.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio11.jpg" alt="alt_text" />
-                <img class="portfolio_item" src="assets/img/portfolio12.jpg" alt="alt_text" />
+            <div class="portfolio_block flex jsb">
+                <img class="portfolio_item" data-topic="Web Design" src="assets/img/portfolio1.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Artwork" src="assets/img/portfolio2.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Graphic Design" src="assets/img/portfolio3.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Web Design" src="assets/img/portfolio4.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Web Design" src="assets/img/portfolio5.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Graphic Design" src="assets/img/portfolio6.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Web Design" src="assets/img/portfolio7.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Artwork" src="assets/img/portfolio8.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Artwork" src="assets/img/portfolio9.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Graphic Design" src="assets/img/portfolio10.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Web Design" src="assets/img/portfolio11.jpg" alt="alt_text" />
+                <img class="portfolio_item" data-topic="Artwork" src="assets/img/portfolio12.jpg" alt="alt_text" />
             </div>
         </section>
 
-        <section class="about">
+        <section class="about section" id="about">
             <div class="about_title">About Us</div>
             <div class="about_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
             <div class="about_block flex">
@@ -181,14 +208,13 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts section" id="contact">
             <div class="contacts_title">Get a Quote</div>
             <div class="contacts_desc">
                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </div>
             <div class="contacts_block flex jsb afs">
                 <form action="/" class="form">
-                    <input type="submit" class="submit">
                     <label class="input_block">
                         <input class="form_item input" type="text" name="name" placeholder="Name (Required)" required>
                     </label>
@@ -199,8 +225,9 @@
                         <input class="form_item input" type="text" name="subject" placeholder="Subject">
                     </label>
                     <label class="input_block">
-                        <textarea class="form_item textarea" name="message" placeholder="Describe your project in detail..."></textarea>
+                        <textarea class="form_item textarea" name="message" placeholder="Describe your project in detail..." maxlength="100"></textarea>
                     </label>
+                    <input type="submit" class="submit" value="SEND">
                 </form>
                 <div class="contacts_text">
                     <div class="contacts_text_title">Contact Information</div>
@@ -241,6 +268,16 @@
                 </a>
             </div>
         </footer>
+        <div class="popup_wrapper">
+            <div class="popup">
+                <div class="popup_title">Письмо отправлено</div>
+                <div class="popup_text subject"></div>
+                <div class="popup_text message"></div>
+                <button class="popup_close submit">OK</button>
+            </div>
+        </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
