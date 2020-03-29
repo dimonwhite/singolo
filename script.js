@@ -199,3 +199,11 @@ nav.addEventListener('click', (e) => {
         closeMenu(burger);
     }
 });
+
+if(window.innerWidth < 768) {
+    links.forEach(item => {
+        item.addEventListener('click', () => {
+            closeMenu(burger);
+        });
+    });
+}
