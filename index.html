@@ -10,64 +10,76 @@
 <body>
     <main class="container">
         <header class="header flex jsb ac">
+            <button class="burger">
+                <span class="burger_add"></span>
+                <span class="burger_add"></span>
+                <span class="burger_add"></span>
+            </button>
             <a href="#" class="logo">
                 <span class="logo_white">SINGOLO</span><span class="logo_red">*</span>
             </a>
             <nav class="navigation">
-                <ul class="navigation_block flex ac">
-                    <li class="navigation_item active">
-                        <a href="#home" class="navigation_link">HOME</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="#services" class="navigation_link">SERVICES</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="#portfolio" class="navigation_link">PORTFOLIO</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="#about" class="navigation_link">ABOUT</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="#contact" class="navigation_link">CONTACT</a>
-                    </li>
-                </ul>
+                <div class="navigation_wrapper">
+                    <a href="#" class="logo">
+                        <span class="logo_white">SINGOLO</span><span class="logo_red">*</span>
+                    </a>
+                    <ul class="navigation_block flex ac">
+                        <li class="navigation_item active">
+                            <a href="#home" class="navigation_link">HOME</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#services" class="navigation_link">SERVICES</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#portfolio" class="navigation_link">PORTFOLIO</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#about" class="navigation_link">ABOUT</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#contact" class="navigation_link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section class="carousel section" id="home">
-            <div class="carousel_wrapper">
-                <div class="carousel_item active">
-                    <div class="phone phone_left">
-                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
-                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
-                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+            <div class="carousel_block">
+                <div class="carousel_wrapper">
+                    <div class="carousel_item active">
+                        <div class="phone phone_left">
+                            <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                            <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                            <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                        </div>
+                        <div class="phone phone_right">
+                            <img src="assets/img/phone-horizontal-shadow.png" alt="Телефон" class="shadow">
+                            <img src="assets/img/phone-horizontal.png" alt="Телефон" class="case">
+                            <img src="assets/img/phone-horizontal-display.png" alt="Телефон" class="display">
+                        </div>
                     </div>
-                    <div class="phone phone_right">
-                        <img src="assets/img/phone-horizontal-shadow.png" alt="Телефон" class="shadow">
-                        <img src="assets/img/phone-horizontal.png" alt="Телефон" class="case">
-                        <img src="assets/img/phone-horizontal-display.png" alt="Телефон" class="display">
+                    <div class="carousel_item blue">
+                        <div class="phone phone_left phone_center_min phone_center_left">
+                            <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                            <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                            <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                        </div>
+                        <div class="phone phone_left phone_center">
+                            <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                            <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                            <img src="assets/img/phone-green-display.png" alt="Телефон" class="display">
+                        </div>
+                        <div class="phone phone_left phone_center_min phone_center_right">
+                            <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
+                            <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
+                            <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel_item blue">
-                    <div class="phone phone_left phone_center_min phone_center_left">
-                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
-                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
-                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
-                    </div>
-                    <div class="phone phone_left phone_center">
-                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
-                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
-                        <img src="assets/img/phone-green-display.png" alt="Телефон" class="display">
-                    </div>
-                    <div class="phone phone_left phone_center_min phone_center_right">
-                        <img src="assets/img/phone-vertical-shadow.png" alt="Телефон" class="shadow">
-                        <img src="assets/img/phone-vertical.png" alt="Телефон" class="case">
-                        <img src="assets/img/phone-vertical-display.png" alt="Телефон" class="display">
-                    </div>
+                <div class="carousel_nav">
+                    <button class="carousel_nav_btn carousel_nav_left"></button>
+                    <button class="carousel_nav_btn carousel_nav_right"></button>
                 </div>
-            </div>
-            <div class="carousel_nav">
-                <button class="carousel_nav_btn carousel_nav_left"></button>
-                <button class="carousel_nav_btn carousel_nav_right"></button>
             </div>
         </section>
         <section class="content section" id="services">

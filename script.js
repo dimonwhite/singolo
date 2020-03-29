@@ -91,7 +91,8 @@ phones.forEach(item => {
 
 // portfolio
 
-let portfolioImages = document.querySelector('.portfolio_block');
+let portfolioImagesBlock = document.querySelector('.portfolio_block'),
+    portfolioImages = portfolioImagesBlock.querySelectorAll('.portfolio_item');
 
 const clickPortfolioImage = (e) => {
     if(e.target.tagName === 'IMG') {
@@ -100,7 +101,7 @@ const clickPortfolioImage = (e) => {
             elemClass.remove('active');
         }
         else {
-            portfolioImages.querySelectorAll('.portfolio_item').forEach((item) => {
+            portfolioImagesBlock.querySelectorAll('.portfolio_item').forEach((item) => {
                 item.classList.remove('active');
             });
             elemClass.add('active');
@@ -108,17 +109,23 @@ const clickPortfolioImage = (e) => {
     }
 };
 
-portfolioImages.addEventListener('click', clickPortfolioImage);
+portfolioImagesBlock.addEventListener('click', clickPortfolioImage);
 
 let portfolioLinks = document.querySelector('.portfolio_nav');
 
 const filterBlocks = (topic) => {
-        portfolioImages.querySelectorAll('.portfolio_item').forEach(item => {
-            item.classList.remove('filter');
-            if(topic !== 'All' && item.dataset.topic === topic) {
-                item.classList.add('filter');
-            }
-        });
+        if(topic === 'All') {
+            portfolioImages.forEach(item => {           
+                portfolioImagesBlock.append(item);
+            });
+        }
+        else {
+            portfolioImages.forEach(item => {
+                if(item.dataset.topic === topic) {
+                    portfolioImagesBlock.prepend(item);
+                }
+            });
+        }
     },
     clickPortfolioLink = (e) => {
     if( e.target.tagName === 'A' && !e.target.classList.contains('active') ) {
@@ -157,3 +164,38 @@ const sendForm = e => {
 } ;
 
 form.addEventListener('submit', sendForm);
+
+// burger
+
+let burger = document.querySelector('.burger'),
+    nav = document.querySelector('.navigation'),
+    nav_wrapper = nav.querySelector('.navigation_wrapper');
+
+const closeMenu = (burgerBtn) => {
+    burgerBtn.classList.remove('active');
+    nav_wrapper.classList.remove('active');
+    nav.classList.remove('opacity');
+    setTimeout(() => {
+        nav.classList.remove('active');
+    }, 600);
+},
+openMenu = (burgerBtn) => {
+    burgerBtn.classList.add('active');
+    nav_wrapper.classList.add('active');
+    nav.classList.add('opacity', 'active');
+};
+
+burger.addEventListener('click', function() {
+    if(this.classList.contains('active')) {
+        closeMenu(this);
+    }
+    else {
+        openMenu(this);
+    }
+});
+
+nav.addEventListener('click', (e) => {
+    if(!nav_wrapper.contains(e.target)) {
+        closeMenu(burger);
+    }
+});
